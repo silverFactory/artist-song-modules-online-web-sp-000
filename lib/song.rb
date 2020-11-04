@@ -1,10 +1,10 @@
 require 'pry'
 require_relative './concerns/memorable.rb'
-extend Memorable
+
 class Song
   attr_accessor :name
   attr_reader :artist
-
+  extend Memorable
   @@songs = []
 
   def initialize
